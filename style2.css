@@ -1,0 +1,65 @@
+
+
+#header{
+    align-items: center;
+    justify-content: center;
+}
+ 
+ .topbar{
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+
+
+ul{
+    border: 2px solid black;
+    list-style-type: none;
+    
+}
+ 
+button{
+    margin: 20px;
+    height: 28px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+button:hover{
+    height: 30px;
+    width: 154px;
+}
+
+
+@media screen and (min-width: 680px){
+
+    .bodyarea{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: 
+        'a b';
+    }
+
+    .topbar{
+        grid-area: b;
+    }
+
+    .ul{
+        grid-area: a;
+        min-width: 200px;
+    }
+
+    ul{
+        min-height: 50svh;
+    }
+
+    button{
+        width: 100px;
+    }
+
+}
