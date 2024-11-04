@@ -11,13 +11,13 @@ background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAk
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+margin-bottom: 40px;
 
 }
 
 ul{
-   border: 2px solid black;
    list-style-type: none;
-  
+   
 }
 
 button{
@@ -36,8 +36,31 @@ button:hover{
    width: 154px;
 }
 
+.div1{
+   height: 40px;
+   border: 1px solid black;
+   border-radius: 8px;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+   text-align: center;
+
+}
+
 @media screen and (min-width: 680px){
-   .bodyarea{
-      background-repeat: repeat-y;
+   .realbodyarea{
+      display: flex;
    }
+
+   .bodyarea{
+      width: 500px;
+   }
+
+   #bodyareaL{
+      margin-right: 80px;
+   }
+   #bodyareaR{
+      margin-left: 80px;
+   }
+   
 }
